@@ -1,5 +1,7 @@
 <script>
-    a = [1,3,5,9]
-    b = a.map( e => e*e )
-    console.log(b)
+    let url = "https://newsapi.org/v2/everything?q=modi&from=2019-12-21&sortBy=publishedAt&apiKey=4431feeb1f68434185f389172a2274f9";
+    fetch(url)
+    .then(resp=>{ return resp.json() })
+    .then(resp=>{ console.log(resp.articles) })
+    .catch(err => {console.log(err)})
 </script>
