@@ -1,7 +1,6 @@
 <script>
-    let url = "https://newsapi.org/v2/everything?q=modi&from=2019-12-21&sortBy=publishedAt&apiKey=4431feeb1f68434185f389172a2274f9";
-    fetch(url)
-    .then(resp=>{ return resp.json() })
-    .then(resp=>{ console.log(resp.articles) })
-    .catch(err => {console.log(err)})
+    var si = "satya"
+    // var r1 = /si/i
+    var r1 = new RegExp(si, "i")
+    console.log(r1)
 </script>
